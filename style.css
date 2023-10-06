@@ -203,6 +203,10 @@ body {
   position: relative;
   width: 199px;
 }
+.text-container {
+  display: flex;
+  justify-content: space-between;
+}
 .text {
   color: #fefeff;
   font-size: 0.75rem; /* 12px / 16px = 0.75rem */
@@ -354,7 +358,7 @@ body {
 .image-2 {
   height: 195px;
   left: 0;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   width: 100%; /* 1600px / 1600px = 100% */
   background: url(images/peak.jpg) no-repeat center 0;
@@ -380,16 +384,7 @@ body {
 .thumbnails > *:last-child {
   margin-right: 0 !important;
 }
-.rectangle-23-copy {
-  width: 220px;
-}
 .rectangle-23 {
-  width: 220px;
-}
-.rectangle-23-copy-2 {
-  width: 220px;
-}
-.rectangle-23-2 {
   width: 220px;
 }
 .circle-nav {
@@ -403,33 +398,28 @@ body {
   float: left;
   margin: 0 6px 0 0;
 }
+
+.circle-nav > *:hover {
+  cursor: pointer;
+  background: #ffffff;
+}
+
 .circle-nav > *:last-child {
   margin-right: 0 !important;
 }
-.ellipse-1 {
+.ellipse {
   height: 6px;
   width: 6px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.ellipse-active {
   background: #ffffff;
 }
-.ellipse-1-copy {
-  height: 6px;
-  width: 6px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
-}
-.ellipse-1-copy-2 {
-  height: 6px;
-  width: 6px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
-}
+
 .group-2 {
   margin: 15px auto 0;
   position: relative;
