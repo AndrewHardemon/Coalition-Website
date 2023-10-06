@@ -219,19 +219,7 @@ body {
   margin: 2px 0 0;
   position: relative;
 }
-.shape-1-copy {
-  float: left;
-  height: 1px;
-  margin: 0 49px 0 0;
-  width: 84px;
-  background: #ffffff;
-}
-.shape-1-copy-2 {
-  float: left;
-  height: 1px;
-  width: 66px;
-  background: #ffffff;
-}
+
 .text-2 {
   display: block;
   margin: 189px auto 0;
@@ -279,19 +267,7 @@ body {
   margin: 2px 0 0;
   position: relative;
 }
-.shape-1-copy-3 {
-  float: left;
-  height: 1px;
-  margin: 0 49px 0 0;
-  width: 84px;
-  background: #414f6b;
-}
-.shape-1-copy-2-2 {
-  float: left;
-  height: 1px;
-  width: 66px;
-  background: #414f6b;
-}
+
 .bg {
   margin: 14px auto 0;
   padding: 44px 0 453px;
@@ -625,8 +601,38 @@ body {
 .hidden {
   display: none;
 }
+.text {
+  border-bottom: 1px solid #ffffff;
+}
+.text-4 {
+  border-bottom: 1px solid black;
+}
+@media screen and (max-width: 999px) {
+  .sticky-nav {
+    width: 100%;
+  }
+  .text-5, .text-7, .text-8, .text-10 {
+    width: 100%;
+    text-align: center;
+  }
+  /* .text-11{
+    color: black;
+  } */
+}
 
 @media screen and (max-width: 645px) {
+  .text-2{
+    right: 0;
+    padding: 5px;
+  }
+  .text-container{
+    width: 90%;
+  }
+  .thumbnails {
+    left:0;
+    width: 100%;
+  }
+  
   .tabs {
     /* background-color: #414f6a; */
     background-image: none;
@@ -640,6 +646,7 @@ body {
     align-items: center;
     padding: 0;
   }
+
   .text-11, .text-12 {
     padding: 10px;
     width: 100%;
@@ -653,35 +660,31 @@ body {
     background-color: #414f6a;
     
   }
-  .row-2 {
-    width: 100vw;
-  }
-  .sticky-nav {
+  .l-constrained-2{
     width: 100%;
-  }
-  .text-5, .text-7, .text-8, .text-10 {
-    width: 100%;
-    text-align: center;
-  }
-  .image {
-    width: 100%;
-  }
-  .l-constrained, .l-constrained-2, .l-constrained-3{
-    width: 100%;
-  }
-  .thumbnails {
-    left:0;
-    width: 100%;
-  }
-
-  .tab-1, .tab-2 {
-    width: 100%;
-  }
-  .content, .content-2 {
-    right: 0;
   }
 }
 
+
+/* Originally in media query. Using globally for better responsiveness */
+.row-2 {
+  width: 90%;
+}
+
+.image {
+  width: 100%;
+}
+
+.l-constrained,  .l-constrained-3{
+  width: 100%;
+}
+
+.tab-1, .tab-2 {
+  width: 100%;
+}
+.content, .content-2 {
+  right: 0;
+}
 /* @media screen and (max-width: 966px) {
   * {
     width: auto;
