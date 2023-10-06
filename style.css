@@ -385,6 +385,7 @@ body {
   margin-right: 0 !important;
 }
 .rectangle-23 {
+  transition: all 0.5s linear;
   width: 220px;
 }
 .circle-nav {
