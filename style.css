@@ -137,7 +137,7 @@ html {
   font-size: 16px;
 }
 body {
-  min-width: 960px;
+  /* min-width: 960px; */
   color: #000000;
   font-family: Lato, sans-serif;
   font-size: 1rem; /* 16px / 16px = 1rem */
@@ -493,7 +493,7 @@ body {
   font-family: Oswald, sans-serif;
   font-size: 1.25rem; /* 20px / 16px = 1.25rem */
   font-weight: bold;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .text-12 {
   float: left;
@@ -502,6 +502,9 @@ body {
   font-family: Oswald, sans-serif;
   font-size: 1.25rem; /* 20px / 16px = 1.25rem */
   font-weight: bold;
+}
+.text-active {
+  text-decoration: underline;
 }
 .tab-content {
   height: 546px;
@@ -622,7 +625,98 @@ body {
 .hidden {
   display: none;
 }
-.accordian
-.dropdown {
 
+@media screen and (max-width: 645px) {
+  .tabs {
+    /* background-color: #414f6a; */
+    background-image: none;
+    height: auto;
+    margin: auto;
+    padding: 0;
+  }
+  .l-constrained-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .text-11, .text-12 {
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+    /* float: none; */
+  }
+  .text-11 {
+    background-color: #b0b4be;
+  }
+  .text-12 {
+    background-color: #414f6a;
+    
+  }
+  .row-2 {
+    width: 100vw;
+  }
+  .sticky-nav {
+    width: 100%;
+  }
+  .text-5, .text-7, .text-8, .text-10 {
+    width: 100%;
+    text-align: center;
+  }
+  .image {
+    width: 100%;
+  }
+  .l-constrained, .l-constrained-2, .l-constrained-3{
+    width: 100%;
+  }
+  .thumbnails {
+    left:0;
+    width: 100%;
+  }
+
+  .tab-1, .tab-2 {
+    width: 100%;
+  }
+  .content, .content-2 {
+    right: 0;
+  }
 }
+
+/* @media screen and (max-width: 966px) {
+  * {
+    width: auto;
+  }
+}
+@media screen and (max-width: 666px) {
+  body * {
+    display: inline-block;
+  }
+} */
+/* @media screen and (max-width: 854px) {
+  body{
+    
+  }
+  .image {
+    width: 542px;
+    background-position: center 0;
+    background-size: cover;
+  }
+  .col {
+    background-position: center 0;
+    background-size: cover;
+  }
+  .l-constrained-3 {
+    width: 100%;
+  }
+  .row-2 {
+    width: 100%;
+  }
+  .logo {
+    float: left;
+  }
+
+  .text-2 {
+    width:60%;
+    margin:189px auto;
+  }
+} */

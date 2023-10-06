@@ -50,8 +50,12 @@ const tab2 = document.querySelector(".tab-2");
 document.querySelector("#mountain-1").addEventListener("click", function (e) {
   tab1.classList.remove("hidden");
   tab2.classList.add("hidden");
+  document.querySelector(".text-11").classList.add("text-active");
+  document.querySelector(".text-12").classList.remove("text-active");
 });
 document.querySelector("#mountain-2").addEventListener("click", function (e) {
   tab2.classList.remove("hidden");
   tab1.classList.add("hidden");
+  document.querySelector(".text-12").classList.add("text-active");
+  document.querySelector(".text-11").classList.remove("text-active");
 });
