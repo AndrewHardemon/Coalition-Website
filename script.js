@@ -1,7 +1,7 @@
+//Carousel Functionality
 
 //Create array of images
 let imgArr = [...document.querySelectorAll(".rectangle-23")]
-
 document.querySelectorAll(".ellipse").forEach(function (el, index) {
   el.addEventListener("click", function (e) {
     let current = e.target;
@@ -44,9 +44,14 @@ document.querySelectorAll(".ellipse").forEach(function (el, index) {
 });
 
 
-function translateImage(img, id){
-  if(id === 0){
-    img.style.transform = `translateX(0%)`;
-  }
-  imgArr[id-1].style.transform = `translateX(${-105 * (id-1)}%)`
-}
+// Tab Functionality
+const tab1 = document.querySelector(".tab-1");
+const tab2 = document.querySelector(".tab-2");
+document.querySelector("#mountain-1").addEventListener("click", function (e) {
+  tab1.classList.remove("hidden");
+  tab2.classList.add("hidden");
+});
+document.querySelector("#mountain-2").addEventListener("click", function (e) {
+  tab2.classList.remove("hidden");
+  tab1.classList.add("hidden");
+});
